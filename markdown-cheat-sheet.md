@@ -10,7 +10,7 @@ ja que en aquests no es té l'opció d'un compilador que identifiqui les inconsi
 
 ## Origen
 
-El seu origen prové d'un antic recurs implementat en el llenguatge de programació C, anomenat lint en l'any 1979.
+El seu origen prové del sistema operatiu UNIX, d'un antic recurs implementat en el llenguatge de programació C, anomenat lint, en l'any 1979.
 
 ## Funcions
 
