@@ -14,16 +14,15 @@ El seu origen prové d'un antic recurs implementat en el llenguatge de programac
 
 ## Funcions
 
--Anàlisi d'errors de sintaxi: Verifiquen que el codi no contingui errors de sintaxi, com errors de puntuació o ús incorrecte de funcions. 
--Identificació de problemes potencials: Detecten problemes en el desenvolupament del codi, com trucades a funcions obsoletes o variables no declarades. 
--Verificació d'estils de codi: Asseguren que el codi segueixi les pautes d'estil establertes, la qual cosa ajuda a mantenir la llegibilitat i la coherència. 
--Seguretat del codi: Es poden configurar per detectar vulnerabilitats de seguretat en el codi font. 
--Manteniment del codi: Faciliten la revisió i millora contínua del codi, ajudant els desenvolupadors a mantenir el seu codi més net i fàcil d'entendre.
+- Anàlisi d'errors de sintaxi: Verifiquen que el codi no contingui errors de sintaxi, com errors de puntuació o ús incorrecte de funcions. 
+- Identificació de problemes potencials: Detecten problemes en el desenvolupament del codi, com trucades a funcions obsoletes o variables no declarades.
+- Verificació d'estils de codi: Asseguren que el codi segueixi les pautes d'estil establertes, la qual cosa ajuda a mantenir la llegibilitat i la coherència.
+- Seguretat del codi: Es poden configurar per detectar vulnerabilitats de seguretat en el codi font. 
+- Manteniment del codi: Faciliten la revisió i millora contínua del codi, ajudant els desenvolupadors a mantenir el seu codi més net i fàcil d'entendre.
 
 ## Exemples de linters
 
 - ESLint: Eina per a JavaScript que ajuda a mantenir la qualitat del codi i assegura que segueixi certes regles d'estil.
- 
 - Stylelint: Eina per a CSS que verifica el compliment de les directrius d'estil.
 - Pylint: Eina per a Python que serveix identificar errors, aplicar estàndards de codificació i millorar la qualitat del codi.
 - HTMLHint: Eina que seveix per validar HTML
