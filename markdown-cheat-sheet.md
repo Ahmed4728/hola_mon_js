@@ -29,3 +29,39 @@ El seu origen prové d'un antic recurs implementat en el llenguatge de programac
 - Commitlint: Eina que ajuda a mantenir la coherència als fitxers de codi d'un repositori.
 - Ktlint: Eina per al llenguatge de programació Go que verifica el compliment de les regles d'estil.
 - TSLint: Eina per a TypeScript que ajuda a mantenir la qualitat del codi.
+
+## Comandes ESLint
+
+ESLint per poguer utilizar, es fa servir uns ordes de comandes.
+
+Es requereix instal·lar "npm", per poguer utilizar ESLint, que es un paquet per generar arxius per gestions generals per JavaScript
+
+Primer es te de instal·lar el ESLint que es te de fer servir les ordes de comandes que son aquest:
+
+npm init @eslint/config@latest
+
+Aquest comanda, us generara un arxiu de configuracio tots, on es podra aplicar les regles que requereixen el projecte. Aquest arxiu generat es tenir aquesta configuracio:
+
+**import js from "@eslint/js";** <br>
+**import globals from "globals";** <br>
+**import { defineConfig } from "eslint/config";** <br>
+
+**export default defineConfig([** <br> 
+  **{ files: ["**/*.{js,mjs,cjs}"], plugins: { js }, extends: ["js/recommended"], languageOptions: { globals: globals.browser } },** <br>
+**]);** <br>
+
+per fer la primera comprovacio es posa aquest orde de comanda: 
+
+**npx eslint nom_arxiu.js**
+
+tambe podem comprovar multiples arxius: 
+
+**npx eslint arxiu1.js arxiu2.js**
+
+si tenim gran quantitat arxius, per estalviar escriure es pot utilizar aquest comanda:
+
+**npx eslit ./**
+
+si necessitem tindre varios tipos de configuracions, per diferents contextos de desenvolupament o situacions, podem indicar una configuracio especifica amb aquesta comanda:
+
+**npx eslint -c nom_configuracio.config.mjs arxiu1.js**
