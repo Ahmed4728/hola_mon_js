@@ -1,119 +1,32 @@
-# Markdown Cheat Sheet
+# Linters i ESLint
 
-Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
+## Introducció
 
-This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for [basic syntax](https://www.markdownguide.org/basic-syntax/) and [extended syntax](https://www.markdownguide.org/extended-syntax/).
+Un linter es una eina que permet optimizar el codi font, es un instrument que analitza el codi font per determinar si existeix alguna inconsistencia.
+En serveix per detectar si hi han errors en el codi, fa depuracio del codi, fa examens d'analisis del codi entre altres.
 
-## Basic Syntax
+Els linters són útils per a llenguatges de programació compilats, però també són importants per als llenguatges interpretats, 
+ja que en aquests no es té l'opció d'un compilador que identifiqui les inconsistències durant el període de desenvolupament del sistema.
 
-These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
+## Origen
 
-### Heading
+El seu origen prové d'un antic recurs implementat en el llenguatge de programació C, anomenat lint en l'any 1979.
 
-# H1
-## H2
-### H3
+## Funcions
 
-### Bold
+-Anàlisi d'errors de sintaxi: Verifiquen que el codi no contingui errors de sintaxi, com errors de puntuació o ús incorrecte de funcions. 
+-Identificació de problemes potencials: Detecten problemes en el desenvolupament del codi, com trucades a funcions obsoletes o variables no declarades. 
+-Verificació d'estils de codi: Asseguren que el codi segueixi les pautes d'estil establertes, la qual cosa ajuda a mantenir la llegibilitat i la coherència. 
+-Seguretat del codi: Es poden configurar per detectar vulnerabilitats de seguretat en el codi font. 
+-Manteniment del codi: Faciliten la revisió i millora contínua del codi, ajudant els desenvolupadors a mantenir el seu codi més net i fàcil d'entendre.
 
-**bold text**
+## Exemples de linters
 
-### Italic
-
-*italicized text*
-
-### Blockquote
-
-> blockquote
-
-### Ordered List
-
-1. First item
-2. Second item
-3. Third item
-
-### Unordered List
-
-- First item
-- Second item
-- Third item
-
-### Code
-
-`code`
-
-### Horizontal Rule
-
----
-
-### Link
-
-[Markdown Guide](https://www.markdownguide.org)
-
-### Image
-
-![alt text](https://www.markdownguide.org/assets/images/tux.png)
-
-## Extended Syntax
-
-These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
-
-### Table
-
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-
-### Fenced Code Block
-
-```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
-### Footnote
-
-Here's a sentence with a footnote. [^1]
-
-[^1]: This is the footnote.
-
-### Heading ID
-
-### My Great Heading {#custom-id}
-
-### Definition List
-
-term
-: definition
-
-### Strikethrough
-
-~~The world is flat.~~
-
-### Task List
-
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
-
-### Emoji
-
-That is so funny! :joy:
-
-(See also [Copying and Pasting Emoji](https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji))
-
-### Highlight
-
-I need to highlight these ==very important words==.
-
-### Subscript
-
-H~2~O
-
-### Superscript
-
-X^2^
+- ESLint: Eina per a JavaScript que ajuda a mantenir la qualitat del codi i assegura que segueixi certes regles d'estil.
+ 
+- Stylelint: Eina per a CSS que verifica el compliment de les directrius d'estil.
+- Pylint: Eina per a Python que serveix identificar errors, aplicar estàndards de codificació i millorar la qualitat del codi.
+- HTMLHint: Eina que seveix per validar HTML
+- Commitlint: Eina que ajuda a mantenir la coherència als fitxers de codi d'un repositori.
+- Ktlint: Eina per al llenguatge de programació Go que verifica el compliment de les regles d'estil.
+- TSLint: Eina per a TypeScript que ajuda a mantenir la qualitat del codi.
